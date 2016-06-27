@@ -1,17 +1,22 @@
 
 // Converted Variables
-
-
-// Custom Media Query Variables
-
+$form-field-padding-x: .5rem !default;
+$form-field-padding-y: .5rem !default;
+$form-field-height: 2.25rem !default;
+$border-radius: 3px !default;
+$border-width: 1px !default;
+$h5: .875rem !default;
+$space-1: .5rem !default;
+$space-2: 1rem !default;
+$gray: #aaa !default;
 
 /* Basscss Forms */
 
 .label {
-  font-size: .875rem;
+  font-size: $h5;
   font-weight: bold;
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: $space-1;
 }
 
 .input {
@@ -19,11 +24,11 @@
   font-size: inherit;
   display: block;
   width: 100%;
-  height: 2.5rem;
-  padding: .5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  height: $form-field-height;
+  padding: $form-field-padding-y $form-field-padding-x;
+  margin-bottom: $space-2;
+  border: $border-width solid $gray;
+  border-radius: $border-radius;
 }
 
 .select {
@@ -32,10 +37,10 @@
   display: block;
   width: 100%;
   height: 2.5rem;
-  padding: .5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  padding: $space-1;
+  margin-bottom: $space-2;
+  border: $border-width solid $gray;
+  border-radius: $border-radius;
 }
 
 .textarea {
@@ -43,8 +48,8 @@
   font-size: inherit;
   display: block;
   width: 100%;
-  padding: .5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  padding: $space-1;
+  margin-bottom: $space-2;
+  border: $border-width solid $gray;
+  border-radius: $border-radius;
 }
